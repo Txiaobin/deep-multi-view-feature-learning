@@ -29,6 +29,7 @@ for lamda = lamdas
         sen_te_mean = mean(result(:,2));
         spe_te_mean = mean(result(:,3));
         if acc_te_mean>best_acc_mean
+			best_acc_mean = acc_te_mean；
             best_TSK_result.acc = acc_te_mean;
             best_TSK_result.sen = sen_te_mean;
             best_TSK_result.spe = spe_te_mean;
